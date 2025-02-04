@@ -82,6 +82,7 @@ def createServer():
         while True:
             # 요청 정보 얻기
             (cSocket, addr) = serverSocket.accept() # 블로킹 후 요청이 오면 연결 소켓과 주소 반환
+            # addr - 클라이언트 포트
             print(addr)
 
             # 요청 처리
